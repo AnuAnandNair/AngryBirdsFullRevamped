@@ -167,7 +167,7 @@ function mouseReleased(){
 //set next bird when space key is pressed
 function keyPressed(){
     if((keyCode === 32) && gameState ==="launched"){
-        if(birds.length>=0 ){   
+        if(birds.length>0 ){   
             Matter.Body.setPosition(birds[birds.length-1].body, {x: 200 , y: 50});         
             slingshot.attach(birds[birds.length-1].body);
             
